@@ -1,0 +1,40 @@
+{
+	"folders": [
+		{
+			"path": "."
+		}
+	],
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "perl",
+				"request": "launch",
+				"name": "Perl-Debug local",
+				"console": "integratedTerminal",
+				"program": "${workspaceFolder}/${relativeFile}",
+				"exec": "perl",
+				"execArgs": [],
+				"root": "${workspaceRoot}/",
+				"inc": [],
+				"args": [],
+				"env": {},
+				"debugRaw": false,
+				"debugLog": false,
+				"stopOnEntry": true,
+				"sessions": "single"
+			},
+			{
+				"type": "perl",
+				"request": "launch",
+				"name": "Perl-Debug remote",
+				"console": "remote",
+				"program": "${workspaceFolder}/${relativeFile}",
+				"root": "${workspaceRoot}/",
+				"stopOnEntry": true,
+				"port": 5000,
+				"sessions": "single"
+			}
+		]
+	}
+}
